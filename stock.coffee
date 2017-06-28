@@ -1,5 +1,6 @@
 # Description:
 #   Get a stock price from google since yahoo sucks.
+#   they have officially deprecated their API around may 2017.
 #
 # Dependencies:
 #   None
