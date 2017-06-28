@@ -1,0 +1,1 @@
+# hubot-stocks-googlesource
