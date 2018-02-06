@@ -35,7 +35,7 @@ module.exports = (robot) ->
           result = JSON.parse(body.replace(/\/\/ /, ''))
           popen = result['open']
           if popen is null
-            msg.send "Some kind of error occured! (Bad Symbol?)"
+            msg.send "Some kind of error occurred! (Bad Symbol?)"
           else 
             result = JSON.parse(body.replace(/\/\/ /, ''))
             symbol = result['symbol']
