@@ -42,7 +42,7 @@ module.exports = (robot) ->
             company = result['companyName']
             exchange = result["primaryExchange"]
             sector = result['sector']
-            iexRealtimePrice = if result['iexRealtimePrice'] then result['iexRealtimePrice'] else result['close']
+            iexRealtimePrice = if result['iexRealtimePrice'] is 0 then result['close']
             msg.send "#{company} [#{symbol}] #{exchange} - #{sector}" 
             msg.send "Real-time or Closing price: #{iexRealtimePrice}" 
         catch e 
